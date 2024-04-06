@@ -1,0 +1,43 @@
+<!--
+Contact
+Create the file profile.html. Create a Contact Form and it should contain the following:
+
+<form> element
+Asunto - Input
+Nombre - Input
+Comentarios - TextArea
+Correo electrónico - Input
+Número de teléfono - Input
+Enviar - Botón
+All fields are required, when you hit the submit button you will display the following message and clear all fields
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>profile</title>
+    </head>
+    <body>
+        <form id="contactForm">
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+            <br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" required></textarea>
+            <br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="telefono">Número de teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="message"></div>
+    
+        <script src="contact.js"></script>
+    </body>
+</html>
